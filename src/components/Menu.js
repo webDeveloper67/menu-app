@@ -14,7 +14,7 @@ import {
 class Menu extends Component {
   render() {
     return (
-      <Container maxWidth="md">
+      <Container maxWidth="md" data-test="component-menu">
         <Grid container spacing={4}>
           {this.props.menuItems.map((menuItem) => {
             const { id, title, img, desc, price } = menuItem;

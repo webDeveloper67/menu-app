@@ -10,7 +10,9 @@ class Navbar extends Component {
           <IconButton edge="start" color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6">Menu</Typography>
+          <Typography variant="h6" data-test="navbar-brand">
+            Menu
+          </Typography>
         </Toolbar>
       </AppBar>
     );

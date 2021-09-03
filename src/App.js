@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import menuItemsData from "./data";
 import Categories from "./components/Categories";
 import Menu from "./components/Menu";
@@ -30,14 +30,14 @@ class App extends Component {
   };
   render() {
     return (
-      <Fragment>
+      <div data-test="component-app">
         <Navbar />
         <Categories
           categoryList={this.state.categories}
           filterCategory={this.filterItems}
         />
         <Menu menuItems={this.state.menuItems} />
-      </Fragment>
+      </div>
     );
   }
 }
